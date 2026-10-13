@@ -10,7 +10,7 @@ class SiteNav extends HTMLElement {
         </button>-->
 
         <ul class="navLinks">
-            <li><a href="/" data-page="home">Home</a></li>
+            <li><a href="./" data-page="home">Home</a></li>
             <!--<li><a href="#" data-page="portfolio">Sobre nosotros</a></li>
             <li><a href="#" data-page="presentations">Voluntariado</a></li>-->
             <li><a href="./blog/" data-page="publications">Blog</a></li>
