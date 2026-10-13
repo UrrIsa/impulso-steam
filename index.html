@@ -5,27 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMPULSO STEM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./statics/css/index.css">
+    <link rel="stylesheet" href="/statics/css/index.css">
 </head>
 <body>
 
 
-    <nav class="navbar">
-        <a class="navLogo" href="#" data-goto="home"> Impulso STEM </a> <!-- ancla para la navegacion, href="#" para autoreferencia, creamos la info personalizada con data- y le llamamos destino con valor home-->
-
-        <!--<button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>-->
-
-        <ul class="navLinks">
-            <li><a href="#" data-page="home">Home</a></li>
-            <!--<li><a href="#" data-page="portfolio">Sobre nosotros</a></li>
-            <li><a href="#" data-page="presentations">Voluntariado</a></li>
-            <li><a href="#" data-page="publications">Blog</a></li>
-            <li><a href="#" data-page="teaching">Contacto</a></li>-->
-        </ul>
-        <button class="navMenuBtn">☰</button>
-    </nav>
+    <script src="/statics/js/nav.js"></script>
+    <site-nav></site-nav>
     
     <!-- [ HOME ] -->
     <div class="page" id="pageHome">
@@ -33,11 +19,11 @@
         <!-- [ US ] -->
         <div class="us">
             <div class="usTextCol">
-                <div class="kicker"><span class="dot"></span> CIENCIA - DIVULGACIÓN</div>
-                <h1 class="usName"> Impulso <span>STEM</span> </h1>
+                <div class="kicker"><span class="dot"></span> CIENCIA - ARTE - DIVULGACIÓN</div>
+                <h1 class="usName"> Impulso <span>STEAM</span> </h1>
 
                 <p class="usDesc">
-                    Somos una Colectividad Juvenil Autogestiva integrada por estudiantes y egresados universitarios de distintas disciplinas que comparten el propósito de acercar la ciencia, la tecnología, la ingeniería y las matemáticas (STEM) a niñas, niños, adolescentes y jóvenes.
+                    Somos una Colectividad Juvenil Autogestiva integrada por estudiantes y egresados universitarios de distintas disciplinas que comparten el propósito de acercar la ciencia, la tecnología, la ingeniería, las artes y las matemáticas (STEAM) a niñas, niños, adolescentes y jóvenes.
                 </p>
 
                 <p class="usDesc"> Si necesitas contactarnos puede ser en nuestra cuenta de ig @impulso.stem</p>
@@ -47,10 +33,7 @@
                     <a class="btn btnGhost" href="#" data-goto="cv"> Oportunidades de Voluntariado</a>
                 </div>
 
-                <!--FALTA : scroll hint-->
-                <div style="margin-top: 50px;">
-                    Scroll hint 
-                </div>
+                
             </div>
 
              <div class="usVisualCol">
@@ -61,6 +44,7 @@
                 </div>
             </div>
 
+            <div class="usScrollHint">Scroll</div>
 
         </div> <!-- Termina [ US ] -->
 
@@ -80,8 +64,8 @@
                         <span class="cardId">FILE-01</span>
                     </div>
 
-                    <h2>Impulso STEM </h2>
-                    <p>Cuenta enfocada a comunicar investigación científica y de áreas STEM de forma accesible.
+                    <h2>Impulso STEAM </h2>
+                    <p>Cuenta enfocada a comunicar investigación científica y de áreas STEAM de forma accesible.
                         Complemento a esta página, puesto que son publicaciones en instagram.
                     
                     </p>
@@ -182,11 +166,9 @@
 
         </div> <!-- Termina [ PROYECTOS ] -->
 
-        <footer>
-            <span>© <span id="year"></span> Impulso STEM</span>
-
-            <span> Desarrollador : <a href="https://urriisa.github.io/" target="_blank" rel="noopener noreferrer"> Urri </a> </span>
-        </footer>
+        <script src="/statics/js/footer.js"></script>
+        <site-footer></site-footer>
+        
 
     </div> <!-- Termina [ HOME ] -->
     
