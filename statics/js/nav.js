@@ -3,7 +3,7 @@ class SiteNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <nav class="navbar">
-        <a class="navLogo" href="#" data-goto="home"> Impulso STEAM </a> <!-- ancla para la navegacion, href="#" para autoreferencia, creamos la info personalizada con data- y le llamamos destino con valor home-->
+        <a class="navLogo" href="/" data-goto="home"> Impulso STEAM </a> <!-- ancla para la navegacion, href="#" para autoreferencia, creamos la info personalizada con data- y le llamamos destino con valor home-->
 
         <!--<button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
             <span></span><span></span><span></span>
