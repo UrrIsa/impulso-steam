@@ -10,8 +10,9 @@
     --text: #1E1B4B;
     --cream: #f5f3e8 ;
 
-    --electric :  #3B48FF  ;
-    --purple:#9436ffe4;
+    --electric :  #6128e8  ;
+    
+    --purple:#8551E2;
 
 
     --fontMono: 'Space Mono', sans-serif ;
@@ -293,7 +294,31 @@ img {
     right: 6% ;
 }
 
+.usScrollHint{
+    position: absolute ;
+    bottom: 32px ;
+    left: 80px ;
+    display: flex ;
+    align-items: center ;
+    gap: 12px ;
+    font-size: 11px ;
+    letter-spacing: 0.15em ;
+    text-transform: uppercase ;
+    color: var(--electric);
+    animation: bounce 2.5s ease-in-out infinite;
+}
+.usScrollHint::before{
+    content: '' ;
+    display: block ;
+    width: 3px ;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, var(--electric)) ;
+}
 
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+}
 /* --------------- |~ PROYECTOS DESTACADOS  ----------------- */
 .wrap{
     
